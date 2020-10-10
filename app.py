@@ -26,23 +26,21 @@ ch = st.sidebar.selectbox(
     "Choice",
     [
         "Home",
-        "Sentiment Analysis Tool",
+        "Certificate Generator",
         "Gallery"
     ],
     key="main_select",
     )
 
 if ch == "Home":
-	a = "Sentiment Analysis😷🔬"
+	a = "Certificate Generator😷🔬"
 	st.title(a)
 
-	a = '<p style="text-align: justify;font-size:20px;">Sentiment Analysis is the process of determining whether a piece of writing is positive'
-	a+=', negative or neutral. A sentiment analysis system for text analysis combines natural language processing (NLP) and machine learning'
-	a+='techniques to assign weighted sentiment scores to the entities, topics, themes and categories within a sentence or phrase.<br><br>'
-	a+='Sentiment analysis helps data analysts within large enterprises gauge public opinion, conduct nuanced market research, monitor'
-	a+=' brand and product reputation, and understand customer experiences. In addition, data analytics companies often integrate third-party'
-	a+=' sentiment analysis APIs into their own customer experience management, social media monitoring, or workforce analytics platform, in order'
-	a+=' to deliver useful insights to their own customers.</p><br>'
+	a = '<p style="text-align: justify;font-size:20px;">Certificate Generator is the system which will be used to generate certificates '
+	a+='automatically, just by uploading a csv file and the template for the certificate.'
+	a+='We will be using tesseract and OCR for identifying blank spaces, then we will fill in the spaces with the input given<br><br>'
+	a+='by the user. We will also br providing a few templates which can be directly used to generate certificates.'
+	a+=' </p><br>'
 
 	st.markdown(a,unsafe_allow_html=True)
 
