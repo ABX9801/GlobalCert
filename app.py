@@ -96,13 +96,15 @@ elif ch=="Certificate Generator Tool":
 		tweet = predict(tweet)
 		z = visualize(tweet)
 		wordcloudplot(tweet)
+		
+	uploaded_image = st.sidebar.file_uploader("Choose a Image file", type="jpeg",encoding="ISO-8859-1")
 
 else:
-	a = "Some sample results of our Sentiment Analysis Tool"
+	a = "Results of our Certificate Generator Tool"
 	st.title(a)
-	st.sidebar.markdown("Choose a file for results")
+	st.sidebar.markdown("Choose a font for results")
 	b = st.sidebar.selectbox("Choice",
-		["Iphone11 tweets","Oneplus7 tweets"],
+		["font1","font2","font3","font4","font5","font6","font7","font8"],
 		key="select",
 		)
 	if b=="Iphone11 tweets":
@@ -124,7 +126,7 @@ else:
 				i+=1
 				if i==3:
 					break
-		st.markdown('<h3>Sample Predicted results</h3>',unsafe_allow_html=True)
+		st.markdown('<h3>Certificate Generaator results</h3>',unsafe_allow_html=True)
 		if len(pos)>=3 and len(neg)>=3:
 			a ='<table><tr><th>Tweet</th><th>Sentiment</th></tr>'
 			a+='<tr><td>{}</td><td>positive</td></tr>'.format(pos[0])
