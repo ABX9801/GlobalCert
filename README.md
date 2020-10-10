@@ -2,7 +2,7 @@
   <img src="https://github.com/MehulAgarwal07/GlobalCert/blob/main/Images/AUTOCERT.png" width="1000" title="hover text">
 </p>
 <p align="center">
-  <img src="https://github.com/MehulAgarwal07/GlobalCert/blob/main/Images/Description.png" width="500" title="hover text">
+  <img src="https://github.com/MehulAgarwal07/GlobalCert/blob/main/Images/Description.png" width="1000" title="hover text">
 </p>
 
 
