@@ -45,26 +45,26 @@ if ch == "Home":
 	st.markdown(a,unsafe_allow_html=True)
 
 	a ="<p style='text-align: justify;font-size:20px;'>This project gives its users the knowledge of the world's reactions on any given topic.<br><br>"
-	a+=" <b>Features</b><ul><li style='text-align: justify;font-size:20px;'>Interactive Dashboard to Analyze the Data</li><li style='text-align: justify;font-size:20px;'>Real Time data scraping from twitter</li>"
-	a+="<li style='text-align: justify;font-size:20px;'>File upload Option to Analyze data of different Source</li><li style='text-align: justify;font-size:20px;'>Classification / Sentiment Analysis of data in Positive and Negative sentiment</li>"
-	a+="<li style='text-align: justify;font-size:20px;'>Various analytical visualization of data such as Daily count, Daily Positive count and Daily Negative count plot</li>"
-	a+="<li style='text-align: justify;font-size:20px;'>Word Cloud plot for word level analysis</li><li style='text-align: justify;font-size:20px;'>Sentiment Cloud plot for Analysis of Positive and Negative words</li>"
-	a+="<li style='text-align: justify;font-size:20px;'>Download option to save scapeed tweets.</li></ul></p>"
+	a+=" <b>Features</b><ul><li style='text-align: justify;font-size:20px;'>Interactive Dashboard to generate certificates easily</li><li style='text-align: justify;font-size:20px;'>Real Time data scraping from twitter</li>"
+	a+="<li style='text-align: justify;font-size:20px;'>Template upload Option to generate certificates</li><li style='text-align: justify;font-size:20px;'>Classification / Sentiment Analysis of data in Positive and Negative sentiment</li>"
+	a+="<li style='text-align: justify;font-size:20px;'>Preview of the certificates</li>"
+	a+="<li style='text-align: justify;font-size:20px;'>Bulk Certificate generator</li><li style='text-align: justify;font-size:20px;'>Sentiment Cloud plot for Analysis of Positive and Negative words</li>"
+	a+="<li style='text-align: justify;font-size:20px;'>Download option to save certificates.</li></ul></p>"
 
 	st.markdown(a,unsafe_allow_html=True)
 
-	a = "<p style='text-align: justify;font-size:20px;'>Please choose sentiment Analysis Tool from the sidebar to proceed.</p>"
+	a = "<p style='text-align: justify;font-size:20px;'>Please choose Certificate Generator from the sidebar to proceed.</p>"
 	st.markdown(a,unsafe_allow_html=True)
 
-elif ch=="Sentiment Analysis Tool":
-	a = "Sentiment Analysis Tool!! 😷🔬"
+elif ch=="Certificate Generator Tool":
+	a = "Certificate Generator Tool!! 😷🔬"
 	st.title(a)
-	a = '<p style="text-allign: justify; font-size: 20px;">Enter the hashtag you want the analysis on or select a csv file.</p>'
+	a = '<p style="text-allign: justify; font-size: 20px;">Select a csv file.</p>'
 	st.markdown(a,unsafe_allow_html=True)
 	a = '<p style="font-size: 30px;">Instructions for uploading CSV file:</p>'
-	a+='<ol><li>File should have 2 columns named <b>text</b> and <b>timestamp</b></li>'
-	a+='<li>The text column will contain the tweets.</li><li>The text column will contain the date of the text</li>'
-	a+='<li>The format of timestamp should be "Day Month Date"</li>Eg: Tue Oct 18</ol>'
+	a+='<ol><li>File should have 3 columns named <b>Name</b>, <b>Position</b> and <b>Project</b></li>'
+	a+='<li>The Name column will contain the Names.</li><li>The Position column will contain the Position</li>'
+	a+='<li>The Project column will have column name</li>Eg: Tue Oct 18</ol>'
 	st.markdown(a,unsafe_allow_html=True)
 
 	uploaded_file = st.sidebar.file_uploader("Choose a CSV file", type="csv",encoding="ISO-8859-1")
