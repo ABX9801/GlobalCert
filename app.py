@@ -97,6 +97,10 @@ elif ch=="Certificate Generator Tool":
 		z = visualize(tweet)
 		wordcloudplot(tweet)
 		
+	a = '<p style="text-allign: justify; font-size: 20px;">Select a image file.</p>'
+	st.markdown(a,unsafe_allow_html=True)
+	a = '<p style="font-size: 30px;">Uploade image in jpeg format:</p>'
+	st.markdown(a,unsafe_allow_html=True)
 	uploaded_image = st.sidebar.file_uploader("Choose a Image file", type="jpeg",encoding="ISO-8859-1")
 
 else:
