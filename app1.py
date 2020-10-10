@@ -141,6 +141,9 @@ elif ch=="Certificate Generator":
 					shutil.make_archive('certificates', 'zip', 'Certificates')
 					gg = '<a href="certificates.zip" download>Download my CV</a>'
 					st.markdown(gg,unsafe_allow_html=True)
+					st.markdown('<center><h1>PREVIEW</h1></center>',unsafe_allow_html=True)
+					st.image('./Certificates/'+name[0]+'_0.png')
+
 				else:
 					st.markdown('<h2>The uploaded file does not adhere to the instructions.<h2>',unsafe_allow_html=True)
 			else:
@@ -150,4 +153,12 @@ elif ch=="Certificate Generator":
 
 	
 else:
-	st.title("sdlfmlksmflksdmfl")
+    image = Image.open('./gallery/f8.png')
+    image2 = Image.open('./gallery/CSV_sample.png')
+    image3 = Image.open('./gallery/op.png')
+    st.markdown('<center><h1>Image to be uploaded by you</h1></center>',unsafe_allow_html=True)
+    st.image(image, use_column_width=True)
+    st.markdown('<center><h1>Sample CSV file</h1></center>',unsafe_allow_html=True)
+    st.image(image2, use_column_width=True)
+    st.markdown('<center><h1>Output</h1></center>',unsafe_allow_html=True)
+    st.image(image3, use_column_width=True)
